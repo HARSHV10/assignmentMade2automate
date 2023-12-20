@@ -1,0 +1,84 @@
+.card{
+    flex-shrink: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* height: 300px; */
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 3px rgba(128, 128, 128, 0.324);
+    border-radius: 10px;
+}
+.card_inner{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* background-color: black; */
+
+}
+.productImg{
+    align-self: center;
+    margin-left: auto;
+    height: 40%;
+    width: 40%;
+}
+
+.Cardbutton{
+    display: flex;
+
+    width: 100%;
+}
+
+.Cardbutton :nth-child(1){
+    background-color: blue;
+    font-weight: 800;
+    color: white;
+    border: none;
+    width: 40%;
+    height: 40px;
+    border-radius: 10px;
+    align-self: flex-start;
+}
+.Cardbutton :nth-child(2){
+    background-color: blue;
+    border: none;
+    font-weight: 800;
+    color: white;
+    width: 40%;
+    /* height: 40px; */
+    border-radius: 10px;
+    margin-left: auto;
+}
+.barcodeBTN{
+    width: 50%;
+    align-self: center;
+    border: none;
+    box-sizing: border-box;
+    padding: 10px;
+    font-weight: 800;
+
+    /* background-color: blue; */
+    color: white;
+}
+
+.price_val{
+    font-weight: 800;
+    margin-left: auto;
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.addCart{
+    font-weight: 800;
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: auto;
+}

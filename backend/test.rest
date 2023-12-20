@@ -1,0 +1,50 @@
+GET http://localhost:3000/
+
+###
+
+# request to addItem into the database 
+POST http://localhost:3000/addItem
+Content-Type: application/json
+
+{
+    "name" :"electric item" ,
+    "price":12324,
+    "description":"description",
+    "imageUrl" : "imageUrl",
+    "Feature":"ther are alot of feature",
+    "otherDesc":"otherDesc"
+}
+
+###
+
+# request to update the product
+PUT http://localhost:3000/updateItem
+Content-Type: application/json
+
+{
+    "productID": "8b6f5d8a-f345-4764-9f99-df7958bc8939",
+    "changes":{
+        "name":"Kioken"
+    }
+}
+
+###
+
+# request to get the product
+POST http://localhost:3000/getItem
+Content-Type: application/json
+
+{
+    "filter":{ "productID": "d573590e-fe63-43cb-befb-e1cf57151233"},
+    "pagination":0
+}
+###
+
+# request to delete the product
+DELETE http://localhost:3000/deleteItem
+Content-Type: application/json
+
+{
+    "filter":{ "productID": "d573590e-fe63-43cb-befb-e1cf57151233"}
+}
+
